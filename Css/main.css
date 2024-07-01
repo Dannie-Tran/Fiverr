@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: auto !important;
+}
+.container2 {
+  padding-bottom: 30px;
+}
+
+/* header  */
+.nav-link , .navbar-brand {
+  color: #222325;
+}
+ a:hover{
+  color: #1dbf73 ;
+}
+.nav-link2 {
+  padding: 0 12px;
+  color: #1dbf73;
+}
+.navbar span {
+  font-size: 40px;
+}
+
+/* carousel  */
+.carousel-caption h1{
+  margin-bottom: 7%;
+}
+.carousel-caption h1 {
+  font-size: 3.5rem;
+}
+.carousel-caption b {
+  color: #1dbf73;
+}
+.form-inline {
+  justify-content: center;
+}
+.mr-sm-2 {
+  margin-right: -5.5rem !important;
+}
+.form-control {
+  height: calc(2.5em + 0.75rem + 2px);
+}
+.form-inline .form-control {
+  width: 60%;   
+}
+.carousel-trusted {
+  display:flex;
+  justify-content: center;
+}
+.carousel-trusted li {
+  list-style: none;
+  padding: 15px;
+}
+.carousel-trusted span{
+margin: 15px;
+}
+
+/* Popular  */
+.col-12 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+/* service */
+.div-bg {
+  background-color: #F9F8FD;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div-grid {
+  gap: 30px;
+  width: 1200px;
+  padding: 48px 15px 48px 15px;
+  background-color: #F9F8FD;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  padding: 40px 30px 40px 30px;
+  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.col:hover {
+  cursor: pointer;
+  background-color: #F3F1FC;
+}
+
+.div-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon-grid {
+  font-size: 30px;
+  color: #189A46;
+}
+
+.a-content-grid {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  display: block;
+  color: black;
+}
+
+.substance-grid {
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #696969;
+  font-family: 'Jost', sans-serif;
+}
+
+@media (min-width: 992px) {
+  .row-cols-lg-3 > * {
+    width: 30%;
+  }
+
+  .custom-row-cols-lg-3.row-cols-lg-3 > * {
+    width: 33.333%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .img-inner-left{
+    transform: translateX(calc(20%));
+  }
+}
+
+@media (max-width: 991px) {
+  .row-cols-lg-3 > * {
+    width: 40%; 
+  }
+
+  .img {
+    height: 50vh
+  }
+
+  .img-inner-left {
+    transform: translateX(calc(0%));
+  }
+  
+  .img-inner {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .h5-img-inner {
+    width: 100%;
+    font-size: 50px
+  }
+}
