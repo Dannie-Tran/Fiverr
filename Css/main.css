@@ -161,3 +161,94 @@ margin: 15px;
     font-size: 50px
   }
 }
+/* video  */
+.exp {
+  padding: 100px 0;
+}
+
+.exp__content video {
+  width: 100%;
+}
+
+.exp__content {
+  width: 100%;
+  height: 500px;
+}
+/* made on fiverr  */
+/* blog */
+.blog {
+  padding: 100px 0;
+}
+
+.blog__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.blog__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(50%) grayscale(50%);
+}
+.blog__item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.blog__item10 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
+/* HOVER BLOG */
+.blog__item {
+  position: relative;
+}
+
+.blog__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(133, 114, 123, 0.5);
+  overflow: hidden;
+
+  /* Trước Hover */
+  opacity: 0;
+  transition: all 0.5s;
+}
+/* Sau hover */
+.blog__item:hover .blog__overlay {
+  opacity: 1;
+}
+
+.blog__overlay a {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  /* Trạng thái trước hover */
+  transform: translateY(50px);
+  transition: all 0.5s;
+}
+
+.blog__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog__text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transform: translateY(50px);
+}
+
+/* trạng thái sau hover */
+.blog__item:hover .blog__overlay a {
+  transform: translateY(0);
+}
+
+.blog__item:hover .blog__text {
+  transform: translateY(0);
+}
